@@ -1,0 +1,30 @@
+com/getbrand/app/utils/menu/request/AddProductToCategoryRequest.java
+ com.getbrand.app.utils.menu.request.AddProductToCategoryRequest
+com/getbrand/app/utils/IntegrationComponent.java
+ com.getbrand.app.utils.IntegrationComponent
+com/getbrand/app/utils/ServiceError.java
+ com.getbrand.app.utils.ServiceError
+com/getbrand/app/utils/menu/request/AddCategoryMenuRequest.java
+ com.getbrand.app.utils.menu.request.AddCategoryMenuRequest
+com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuResponse.java
+ com.getbrand.app.utils.poster.server.poster.response.menu.PosterMenuResponse
+com/getbrand/app/utils/File.java
+ com.getbrand.app.utils.File
+com/getbrand/app/utils/poster/request/UpdateIntegrationRequest.java
+ com.getbrand.app.utils.poster.request.UpdateIntegrationRequest
+com/getbrand/app/utils/poster/request/CreateIntegrationRequest.java
+ com.getbrand.app.utils.poster.request.CreateIntegrationRequest
+com/getbrand/app/utils/menu/request/CreateMenuRequest.java
+ com.getbrand.app.utils.menu.request.CreateMenuRequest
+com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuResponseWrapper.java
+ com.getbrand.app.utils.poster.server.poster.response.menu.PosterMenuResponseWrapper
+com/getbrand/app/utils/IntegrationType.java
+ com.getbrand.app.utils.IntegrationType
+com/getbrand/app/utils/ServiceSubError.java
+ com.getbrand.app.utils.ServiceSubError
+com/getbrand/app/utils/IntegrationState.java
+ com.getbrand.app.utils.IntegrationState
+com/getbrand/app/utils/poster/request/AddComponentToIntegrationRequest.java
+ com.getbrand.app.utils.poster.request.AddComponentToIntegrationRequest
+com/getbrand/app/utils/ServiceRestResponse.java
+ com.getbrand.app.utils.ServiceRestResponse
