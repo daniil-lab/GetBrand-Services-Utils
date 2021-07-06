@@ -3,9 +3,9 @@
   "component": {
     "group": "com.getbrand.app",
     "module": "utils",
-    "version": "1.2.0-SNAPSHOT",
+    "version": "7.1.0",
     "attributes": {
-      "org.gradle.status": "integration"
+      "org.gradle.status": "release"
     }
   },
   "createdBy": {
@@ -25,13 +25,13 @@
       },
       "files": [
         {
-          "name": "utils-1.2.0-SNAPSHOT.jar",
-          "url": "utils-1.2.0-SNAPSHOT.jar",
-          "size": 12926,
-          "sha512": "7199a780acbc0434aa12c7f55f394ea8984a398f733b60e0f15e7f2138df38e02132b30333975ea137aa8789305e38f7feb2e455bfa9cddf3978ad473a432a5f",
-          "sha256": "104f405adeb9a1fc551a2144fe443aa0e2fbb44d78cdcc80ea7268ad78b4630f",
-          "sha1": "c20fba2a3e426441b6a43001e678b81c6709136c",
-          "md5": "34187c7240ee9661bec27cf2a897c353"
+          "name": "utils-7.1.0-plain.jar",
+          "url": "utils-7.1.0-plain.jar",
+          "size": 44709,
+          "sha512": "eaf1c2969dd7030cc222643c89428a65a9a60a4bd5fd7eeaea7b1eab899f71a87a0125fcdcf3d21aeb8e9a71191bba39b44198e0512f1784cf647263bbc38470",
+          "sha256": "f080de21532348c81462dba881f0d25afed212fa4339d58337d88957cbd3b30c",
+          "sha1": "9d27c6ebba00b00793d42d7730981a09f68ea55e",
+          "md5": "2e1163afb4d7e530501586769d6d34f9"
         }
       ]
     },
@@ -44,15 +44,80 @@
         "org.gradle.libraryelements": "jar",
         "org.gradle.usage": "java-runtime"
       },
+      "dependencies": [
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.12.3"
+          },
+          "excludes": [
+            {
+              "group": "com.sun.jersey.contribs",
+              "module": "jersey-apache-client4"
+            },
+            {
+              "group": "com.sun.jersey",
+              "module": "jersey-client"
+            },
+            {
+              "group": "com.sun.jersey",
+              "module": "jersey-core"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa",
+          "version": {
+            "requires": "2.5.1-SNAPSHOT"
+          },
+          "excludes": [
+            {
+              "group": "com.sun.jersey.contribs",
+              "module": "jersey-apache-client4"
+            },
+            {
+              "group": "com.sun.jersey",
+              "module": "jersey-client"
+            },
+            {
+              "group": "com.sun.jersey",
+              "module": "jersey-core"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-starter-netflix-eureka-client",
+          "version": {
+            "requires": "3.0.3"
+          },
+          "excludes": [
+            {
+              "group": "com.sun.jersey.contribs",
+              "module": "jersey-apache-client4"
+            },
+            {
+              "group": "com.sun.jersey",
+              "module": "jersey-client"
+            },
+            {
+              "group": "com.sun.jersey",
+              "module": "jersey-core"
+            }
+          ]
+        }
+      ],
       "files": [
         {
-          "name": "utils-1.2.0-SNAPSHOT.jar",
-          "url": "utils-1.2.0-SNAPSHOT.jar",
-          "size": 12926,
-          "sha512": "7199a780acbc0434aa12c7f55f394ea8984a398f733b60e0f15e7f2138df38e02132b30333975ea137aa8789305e38f7feb2e455bfa9cddf3978ad473a432a5f",
-          "sha256": "104f405adeb9a1fc551a2144fe443aa0e2fbb44d78cdcc80ea7268ad78b4630f",
-          "sha1": "c20fba2a3e426441b6a43001e678b81c6709136c",
-          "md5": "34187c7240ee9661bec27cf2a897c353"
+          "name": "utils-7.1.0-plain.jar",
+          "url": "utils-7.1.0-plain.jar",
+          "size": 44709,
+          "sha512": "eaf1c2969dd7030cc222643c89428a65a9a60a4bd5fd7eeaea7b1eab899f71a87a0125fcdcf3d21aeb8e9a71191bba39b44198e0512f1784cf647263bbc38470",
+          "sha256": "f080de21532348c81462dba881f0d25afed212fa4339d58337d88957cbd3b30c",
+          "sha1": "9d27c6ebba00b00793d42d7730981a09f68ea55e",
+          "md5": "2e1163afb4d7e530501586769d6d34f9"
         }
       ]
     },
@@ -66,13 +131,13 @@
       },
       "files": [
         {
-          "name": "utils-1.2.0-SNAPSHOT-sources.jar",
-          "url": "utils-1.2.0-SNAPSHOT-sources.jar",
-          "size": 8636,
-          "sha512": "f3aa16edc58888bf27a6cc321b764408c4fd7740cb067df2d7245c8e8213255abdbd307f9f5ed4877d4a5674afb83f4d4bd455a37b3b83b2557fae761425635e",
-          "sha256": "ee5e7d3a9ca122b7f010bf4753f3e5f45176d808baa166c86ca31980a4736f53",
-          "sha1": "0c126b9e3af13f4027579a0d6af508d5065ff180",
-          "md5": "70432691f22022515f851fbac3025125"
+          "name": "utils-7.1.0-sources.jar",
+          "url": "utils-7.1.0-sources.jar",
+          "size": 26554,
+          "sha512": "ef3a13b9e80af3c0a4ea89094027d594f77a0ed45822f3a2dc61086e022dad402a95ed7cdd7f2b9426246d974be626d9bc55c2fbfd9c879b4cda890d9ed3d14e",
+          "sha256": "f0145e9883aa271df3e8b83a8a69d23a24bfba0c6fa858161be440a68808234d",
+          "sha1": "bf067e96535ae61ddbfc21bed95f48eeaef59566",
+          "md5": "e05d5088626a5fc097cf7363d425766a"
         }
       ]
     }

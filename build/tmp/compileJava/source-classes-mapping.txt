@@ -1,30 +1,91 @@
+com/getbrand/app/utils/company/request/UpdateCompanyStatusRequest.java
+ com.getbrand.app.utils.company.request.UpdateCompanyStatusRequest
+com/getbrand/app/utils/company/models/Company.java
+ com.getbrand.app.utils.company.models.Company
 com/getbrand/app/utils/menu/request/AddProductToCategoryRequest.java
  com.getbrand.app.utils.menu.request.AddProductToCategoryRequest
-com/getbrand/app/utils/IntegrationComponent.java
- com.getbrand.app.utils.IntegrationComponent
-com/getbrand/app/utils/ServiceError.java
- com.getbrand.app.utils.ServiceError
+com/getbrand/app/utils/promo/request/CreatePromoRequest.java
+ com.getbrand.app.utils.promo.request.CreatePromoRequest
+com/getbrand/app/utils/menu/models/MenuProductModificator.java
+ com.getbrand.app.utils.menu.models.MenuProductModificator
+com/getbrand/app/utils/menu/request/AddFileRequest.java
+ com.getbrand.app.utils.menu.request.AddFileRequest
+com/getbrand/app/utils/company/request/CreateCompanyRequest.java
+ com.getbrand.app.utils.company.request.CreateCompanyRequest
+com/getbrand/app/utils/exception/NotFoundException.java
+ com.getbrand.app.utils.exception.NotFoundException
+com/getbrand/app/utils/menu/models/MenuProduct.java
+ com.getbrand.app.utils.menu.models.MenuProduct
 com/getbrand/app/utils/menu/request/AddCategoryMenuRequest.java
  com.getbrand.app.utils.menu.request.AddCategoryMenuRequest
+com/getbrand/app/utils/poster/server/poster/response/PosterResponse.java
+ com.getbrand.app.utils.poster.server.poster.response.PosterResponse
+com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuCategoryResponse.java
+ com.getbrand.app.utils.poster.server.poster.response.menu.PosterMenuCategoryResponse
 com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuResponse.java
  com.getbrand.app.utils.poster.server.poster.response.menu.PosterMenuResponse
-com/getbrand/app/utils/File.java
- com.getbrand.app.utils.File
+com/getbrand/app/utils/menu/request/CreateMenuRequest.java
+ com.getbrand.app.utils.menu.request.CreateMenuRequest
+com/getbrand/app/utils/models/Status.java
+ com.getbrand.app.utils.models.Status
+com/getbrand/app/utils/promo/request/CreatePromoIntegrationRequest.java
+ com.getbrand.app.utils.promo.request.CreatePromoIntegrationRequest
+com/getbrand/app/utils/models/ServiceEvent.java
+ com.getbrand.app.utils.models.ServiceEvent
+com/getbrand/app/utils/promo/request/UpdatePromoRequest.java
+ com.getbrand.app.utils.promo.request.UpdatePromoRequest
+com/getbrand/app/utils/IntegrationState.java
+ com.getbrand.app.utils.IntegrationState
+com/getbrand/app/utils/poster/models/PosterIntegration.java
+ com.getbrand.app.utils.poster.models.PosterIntegration
+com/getbrand/app/utils/exception/InvalidDataException.java
+ com.getbrand.app.utils.exception.InvalidDataException
+com/getbrand/app/utils/company/request/CreateCompanyStatusRequest.java
+ com.getbrand.app.utils.company.request.CreateCompanyStatusRequest
+com/getbrand/app/utils/ServiceAdapter.java
+ com.getbrand.app.utils.ServiceAdapter
+com/getbrand/app/utils/promo/request/AddPromoToIntegrationRequest.java
+ com.getbrand.app.utils.promo.request.AddPromoToIntegrationRequest
+com/getbrand/app/utils/poster/server/poster/response/promo/PosterPromoResponse.java
+ com.getbrand.app.utils.poster.server.poster.response.promo.PosterPromoResponse
+com/getbrand/app/utils/promo/models/Promo.java
+ com.getbrand.app.utils.promo.models.Promo
+com/getbrand/app/utils/IntegrationComponent.java
+ com.getbrand.app.utils.IntegrationComponent
+com/getbrand/app/utils/menu/request/RemoveCategoryMenuRequest.java
+ com.getbrand.app.utils.menu.request.RemoveCategoryMenuRequest
+com/getbrand/app/utils/promo/models/PromoIntegration.java
+ com.getbrand.app.utils.promo.models.PromoIntegration
+com/getbrand/app/utils/ServiceError.java
+ com.getbrand.app.utils.ServiceError
+com/getbrand/app/utils/company/request/UpdateCompanyRequest.java
+ com.getbrand.app.utils.company.request.UpdateCompanyRequest
+com/getbrand/app/utils/menu/models/Menu.java
+ com.getbrand.app.utils.menu.models.Menu
+com/getbrand/app/utils/models/File.java
+ com.getbrand.app.utils.models.File
+com/getbrand/app/utils/poster/server/poster/response/promo/PosterPromoParamsResponse.java
+ com.getbrand.app.utils.poster.server.poster.response.promo.PosterPromoParamsResponse
+com/getbrand/app/utils/ServiceRestResponse.java
+ com.getbrand.app.utils.ServiceRestResponse
 com/getbrand/app/utils/poster/request/UpdateIntegrationRequest.java
  com.getbrand.app.utils.poster.request.UpdateIntegrationRequest
 com/getbrand/app/utils/poster/request/CreateIntegrationRequest.java
  com.getbrand.app.utils.poster.request.CreateIntegrationRequest
-com/getbrand/app/utils/menu/request/CreateMenuRequest.java
- com.getbrand.app.utils.menu.request.CreateMenuRequest
-com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuResponseWrapper.java
- com.getbrand.app.utils.poster.server.poster.response.menu.PosterMenuResponseWrapper
+com/getbrand/app/utils/exception/InternalErrorException.java
+ com.getbrand.app.utils.exception.InternalErrorException
+com/getbrand/app/utils/company/models/CompanyIntegration.java
+ com.getbrand.app.utils.company.models.CompanyIntegration
 com/getbrand/app/utils/IntegrationType.java
  com.getbrand.app.utils.IntegrationType
+com/getbrand/app/utils/poster/server/poster/response/promo/PosterPromoParamsPeriod.java
+ com.getbrand.app.utils.poster.server.poster.response.promo.PosterPromoParamsPeriod
 com/getbrand/app/utils/ServiceSubError.java
  com.getbrand.app.utils.ServiceSubError
-com/getbrand/app/utils/IntegrationState.java
- com.getbrand.app.utils.IntegrationState
 com/getbrand/app/utils/poster/request/AddComponentToIntegrationRequest.java
  com.getbrand.app.utils.poster.request.AddComponentToIntegrationRequest
-com/getbrand/app/utils/ServiceRestResponse.java
- com.getbrand.app.utils.ServiceRestResponse
+com/getbrand/app/utils/menu/models/MenuCategory.java
+ com.getbrand.app.utils.menu.models.MenuCategory
+com/getbrand/app/utils/poster/PosterServiceAdapter.java
+ com.getbrand.app.utils.poster.PosterServiceAdapter
+ com.getbrand.app.utils.poster.PosterServiceAdapter$1

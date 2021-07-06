@@ -8,29 +8,34 @@ public class ServiceError {
     private int status;
     private int systemCode;
     private List<ServiceSubError> subErrors;
+    private Class<? extends RuntimeException> exception;
 
-    public ServiceError(String message, int status, List<ServiceSubError> subErrors) {
+    public ServiceError(String message, int status, List<ServiceSubError> subErrors, Class<? extends RuntimeException> exception) {
         this.message = message;
         this.status = status;
         this.subErrors = subErrors;
+        this.exception = exception;
     }
 
-    public ServiceError(String error, String message, int status, List<ServiceSubError> subErrors) {
+    public ServiceError(String error, String message, int status, List<ServiceSubError> subErrors, Class<? extends RuntimeException> exception) {
         this.error = error;
         this.message = message;
         this.status = status;
         this.subErrors = subErrors;
+        this.exception = exception;
     }
 
-    public ServiceError(String message, int status) {
+    public ServiceError(String message, int status, Class<? extends RuntimeException> exception) {
         this.message = message;
         this.status = status;
+        this.exception = exception;
     }
 
-    public ServiceError(String error, String message, int status) {
+    public ServiceError(String error, String message, int status, Class<? extends RuntimeException> exception) {
         this.error = error;
         this.message = message;
         this.status = status;
+        this.exception = exception;
     }
 
     public String getError() {

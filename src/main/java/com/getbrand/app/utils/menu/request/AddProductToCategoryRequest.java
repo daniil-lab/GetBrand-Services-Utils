@@ -1,6 +1,6 @@
 package com.getbrand.app.utils.menu.request;
 
-import com.getbrand.app.utils.File;
+import com.getbrand.app.utils.models.File;
 
 import java.util.List;
 
@@ -11,37 +11,62 @@ public class AddProductToCategoryRequest {
     private String productDescription;
     private int productPrice;
     private String productType;
+    private boolean isShowForClient;
+    private int posterId;
 
     public AddProductToCategoryRequest() {};
 
-    public AddProductToCategoryRequest(String categoryId, String productName, String productDescription, int productPrice) {
+    public AddProductToCategoryRequest(String categoryId, String productName, String productDescription, int productPrice, int posterId) {
         this.categoryId = categoryId;
         this.productName = productName;
         this.productDescription = productDescription;
         this.productPrice = productPrice;
+        this.posterId = posterId;
     }
 
-    public AddProductToCategoryRequest(String categoryId, String productName, int productPrice) {
+    public AddProductToCategoryRequest(String categoryId, String productName, int productPrice, int posterId) {
         this.categoryId = categoryId;
         this.productName = productName;
         this.productPrice = productPrice;
+        this.posterId = posterId;
     }
 
-    public AddProductToCategoryRequest(String categoryId, List<File> files, String productName, String productDescription, int productPrice, String productType) {
+    public AddProductToCategoryRequest(String categoryId, List<File> files, String productName, String productDescription, int productPrice, String productType, int posterId) {
         this.categoryId = categoryId;
         this.files = files;
         this.productName = productName;
         this.productDescription = productDescription;
         this.productPrice = productPrice;
         this.productType = productType;
+        this.posterId = posterId;
     }
 
-    public AddProductToCategoryRequest(String categoryId, String productName, String productDescription, int productPrice, String productType) {
+    public AddProductToCategoryRequest(String categoryId, String productName, String productDescription, int productPrice, String productType, int posterId) {
         this.categoryId = categoryId;
         this.productName = productName;
         this.productDescription = productDescription;
         this.productPrice = productPrice;
         this.productType = productType;
+        this.posterId = posterId;
+    }
+
+    public AddProductToCategoryRequest(String categoryId, List<File> files, String productName, String productDescription, int productPrice, String productType, boolean isShowForClient, int posterId) {
+        this.categoryId = categoryId;
+        this.files = files;
+        this.productName = productName;
+        this.productDescription = productDescription;
+        this.productPrice = productPrice;
+        this.productType = productType;
+        this.isShowForClient = isShowForClient;
+        this.posterId = posterId;
+    }
+
+    public int getPosterId() {
+        return posterId;
+    }
+
+    public boolean isShowForClient() {
+        return isShowForClient;
     }
 
     public String getCategoryId() {
