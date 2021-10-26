@@ -1,42 +1,41 @@
 package com.getbrand.app.utils.menu.models;
 
-import com.getbrand.app.utils.models.File;
+import com.getbrand.app.utils.company.models.Company;
+import com.getbrand.app.utils.file.models.File;
 
 import javax.persistence.*;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 public class MenuCategory {
     @Id
-    private UUID id = UUID.randomUUID();
+    protected UUID id = UUID.randomUUID();
 
-    private String name;
+    protected String name;
 
-    private int posterId;
+    protected String description;
 
-    private String description;
+    protected boolean isShowForClient = true;
 
-    private boolean isShowForClient = true;
+    protected String createdAt;
 
-    private String createdAt;
+    protected String updatedAt;
 
-    private String updatedAt;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(name = "company_id")
+    protected Company company;
 
-    @OneToMany
-    @JoinColumn(name = "menu_file_id")
-    @ElementCollection
-    private List<File> files;
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = File.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "category_id")
+    protected Set<File> files;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "menu_category_id")
-    @ElementCollection
-    private List<MenuProduct> products;
+    protected List<MenuProduct> products;
 
     @ElementCollection
-    private List<String> components;
+    protected List<String> components;
 
     @PreUpdate
     private void updateDate() {
@@ -45,47 +44,57 @@ public class MenuCategory {
 
     public MenuCategory() {};
 
-    public MenuCategory(String name, int posterId) {
-        this.updatedAt = Instant.now().toString();
-        this.createdAt = Instant.now().toString();
-        this.name = name;
-        this.posterId = posterId;
-        this.components = new ArrayList<>();
-    };
-
-    public MenuCategory(String name, String description, boolean isShowForClient, int posterId) {
+    public MenuCategory(String name, String description, boolean isShowForClient, Company company) {
         this.name = name;
         this.description = description;
-        this.updatedAt = Instant.now().toString();
-        this.createdAt = Instant.now().toString();
         this.isShowForClient = isShowForClient;
-        this.posterId = posterId;
-        this.components = new ArrayList<>();
+        this.company = company;
+        this.products = new ArrayList<>();
+        this.files = new HashSet<>();
     }
 
-    public MenuCategory(String name, String description, boolean isShowForClient, List<File> files, List<MenuProduct> products, int posterId) {
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public void setDescription(String description) {
         this.description = description;
-        this.isShowForClient = isShowForClient;
+    }
+
+    public void setShowForClient(boolean showForClient) {
+        isShowForClient = showForClient;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setUpdatedAt(String updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public void setFiles(Set<File> files) {
         this.files = files;
-        this.products = products;
-        this.updatedAt = Instant.now().toString();
-        this.createdAt = Instant.now().toString();
-        this.posterId = posterId;
-        this.components = new ArrayList<>();
     }
 
-    public MenuCategory(String name, List<MenuProduct> products, int posterId) {
-        this.name = name;
+    public void setProducts(List<MenuProduct> products) {
         this.products = products;
-        this.updatedAt = Instant.now().toString();
-        this.createdAt = Instant.now().toString();
-        this.posterId = posterId;
-        this.components = new ArrayList<>();
     }
 
-    public int getPosterId() {
-        return posterId;
+    public List<String> getComponents() {
+        return components;
+    }
+
+    public void setComponents(List<String> components) {
+        this.components = components;
     }
 
     public String getName() {
@@ -104,7 +113,7 @@ public class MenuCategory {
         return id;
     }
 
-    public List<File> getFiles() {
+    public Set<File> getFiles() {
         return files;
     }
 

@@ -5,6 +5,8 @@ public class ServiceRestResponse<T> {
     private T data;
     private String message;
 
+    public ServiceRestResponse() {};
+
     public ServiceRestResponse(int status, T data, String message) {
         this.status = status;
         this.data = data;

@@ -1,28 +1,21 @@
 package com.getbrand.app.utils.promo.request;
 
-import com.fasterxml.jackson.annotation.*;
+import java.util.UUID;
+
 public class UpdatePromoRequest {
+    private String name;
 
-    @JsonProperty(required = false)
-    private boolean isBanner;
+    private String description;
 
-    @JsonProperty(required = false)
-    private boolean isAllow;
+    private String type;
 
-    @JsonProperty(required = false)
-    private boolean setShowOnMainScreen;
+    private int percent = -1;
+
+    private double summ = -1;
+
+    private UUID companyId;
+
+    private String timeSpending;
 
     public UpdatePromoRequest() {};
-
-    public boolean isBanner() {
-        return isBanner;
-    }
-
-    public boolean isAllow() {
-        return isAllow;
-    }
-
-    public boolean isSetShowOnMainScreen() {
-        return setShowOnMainScreen;
-    }
 }

@@ -1,8 +1,6 @@
 package com.getbrand.app.utils.models;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.List;
 import java.util.UUID;
 
@@ -13,18 +11,43 @@ public class Status {
 
     private String name;
 
-    @ElementCollection
+    @ElementCollection(targetClass=String.class)
+    @Column(name = "_from")
     private List<String> from;
 
+    @Column(name = "_to")
     private String to;
+
+    private boolean auto;
 
     public Status() {};
 
-    public Status(String name, List<String> from, String to) {
+    public Status(String name, List<String> from, String to, boolean auto) {
         this.id = UUID.randomUUID();
         this.name = name;
         this.from = from;
         this.to = to;
+        this.auto = auto;
+    }
+
+    public boolean isAuto() {
+        return auto;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setFrom(List<String> from) {
+        this.from = from;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
+    }
+
+    public void setAuto(boolean auto) {
+        this.auto = auto;
     }
 
     public UUID getId() {

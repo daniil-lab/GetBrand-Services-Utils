@@ -1,33 +1,53 @@
 package com.getbrand.app.utils.poster.models;
 
+import com.getbrand.app.utils.Integration;
 import com.getbrand.app.utils.IntegrationState;
+import com.getbrand.app.utils.IntegrationType;
+import com.getbrand.app.utils.company.models.CompanyStatus;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.UUID;
 
 @Entity
-public class PosterIntegration {
+public class PosterIntegration implements Integration<PosterIntegrationApiData> {
     @Id
     private UUID id;
 
-    private String apiKey;
+    @OneToOne(fetch = FetchType.EAGER, targetEntity = PosterIntegrationApiData.class)
+    private PosterIntegrationApiData apiData;
 
-    private String companyId;
+    private final IntegrationType integrationType = IntegrationType.POSTER;
+
+    private UUID companyId;
 
     private IntegrationState integrationState;
 
     public PosterIntegration() {
     }
 
-    public PosterIntegration(String apiKey, String companyId) {
+    public PosterIntegration(UUID companyId, PosterIntegrationApiData apiData) {
         this.id = UUID.randomUUID();
-        this.apiKey = apiKey;
         this.companyId = companyId;
+        this.apiData = apiData;
         this.integrationState = IntegrationState.PENDING;
     }
 
-    public String getCompanyId() {
+    @Override
+    public PosterIntegrationApiData getApiData() {
+        return apiData;
+    }
+
+    @Override
+    public IntegrationType getIntegrationType() {
+        return integrationType;
+    }
+
+    @Override
+    public void setApiData(PosterIntegrationApiData apiData) {
+        this.apiData = apiData;
+    }
+
+    public UUID getCompanyId() {
         return companyId;
     }
 
@@ -35,20 +55,19 @@ public class PosterIntegration {
         return id;
     }
 
-    public String getApiKey() {
-        return apiKey;
-    }
-
     public IntegrationState getIntegrationState() {
         return integrationState;
-    }
-
-    public void setApiKey(String apiKey) {
-        this.apiKey = apiKey;
     }
 
     public void setIntegrationState(IntegrationState integrationState) {
         this.integrationState = integrationState;
     }
 
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setCompanyId(UUID companyId) {
+        this.companyId = companyId;
+    }
 }

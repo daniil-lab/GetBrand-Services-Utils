@@ -13,6 +13,8 @@ public class PosterPromoParamsResponse {
 
     private float bonus_products_condition_value;
 
+    private double discount_value;
+
     public PosterPromoParamsResponse() {};
 
     public float getBonus_products_condition_value() {
@@ -33,5 +35,33 @@ public class PosterPromoParamsResponse {
 
     public List<PosterPromoParamsPeriod> getPeriods() {
         return periods;
+    }
+
+    public void setWeek_days(List<String> week_days) {
+        this.week_days = week_days;
+    }
+
+    public void setPeriods(List<PosterPromoParamsPeriod> periods) {
+        this.periods = periods;
+    }
+
+    public void setResult_type(int result_type) {
+        this.result_type = result_type;
+    }
+
+    public void setBonus_products_condition_type(int bonus_products_condition_type) {
+        this.bonus_products_condition_type = bonus_products_condition_type;
+    }
+
+    public void setBonus_products_condition_value(float bonus_products_condition_value) {
+        this.bonus_products_condition_value = bonus_products_condition_value;
+    }
+
+    public double getDiscount_value() {
+        return discount_value;
+    }
+
+    public void setDiscount_value(double discount_value) {
+        this.discount_value = discount_value;
     }
 }

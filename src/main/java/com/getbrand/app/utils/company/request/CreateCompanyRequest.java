@@ -2,12 +2,10 @@ package com.getbrand.app.utils.company.request;
 
 import com.getbrand.app.utils.IntegrationType;
 
-import java.util.UUID;
-
 public class CreateCompanyRequest {
     private String name;
 
-    private String inn;
+    private int inn;
 
     private String phone;
 
@@ -25,15 +23,15 @@ public class CreateCompanyRequest {
 
     private String url;
 
+    private String description;
+
     private IntegrationType integrationType;
 
-    private UUID statusId;
+    private String integrationCred;
 
-    public CreateCompanyRequest() {
+    public CreateCompanyRequest() {};
 
-    }
-
-    public CreateCompanyRequest(String name, String inn, String phone, String email, String vk, String ig, String fb, String youtube, String privacy, String url, IntegrationType integrationType, UUID statusId) {
+    public CreateCompanyRequest(String name, int inn, String phone, String email, String vk, String ig, String fb, String youtube, String privacy, String url, String description, IntegrationType integrationType, String integrationCred) {
         this.name = name;
         this.inn = inn;
         this.phone = phone;
@@ -44,15 +42,68 @@ public class CreateCompanyRequest {
         this.youtube = youtube;
         this.privacy = privacy;
         this.url = url;
+        this.description = description;
         this.integrationType = integrationType;
-        this.statusId = statusId;
+        this.integrationCred = integrationCred;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setInn(int inn) {
+        this.inn = inn;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setVk(String vk) {
+        this.vk = vk;
+    }
+
+    public void setIg(String ig) {
+        this.ig = ig;
+    }
+
+    public void setFb(String fb) {
+        this.fb = fb;
+    }
+
+    public void setYoutube(String youtube) {
+        this.youtube = youtube;
+    }
+
+    public void setPrivacy(String privacy) {
+        this.privacy = privacy;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setIntegrationType(IntegrationType integrationType) {
+        this.integrationType = integrationType;
+    }
+
+    public void setIntegrationCred(String integrationCred) {
+        this.integrationCred = integrationCred;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getInn() {
+    public int getInn() {
         return inn;
     }
 
@@ -88,7 +139,16 @@ public class CreateCompanyRequest {
         return url;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     public IntegrationType getIntegrationType() {
         return integrationType;
     }
+
+    public String getIntegrationCred() {
+        return integrationCred;
+    }
 }
+

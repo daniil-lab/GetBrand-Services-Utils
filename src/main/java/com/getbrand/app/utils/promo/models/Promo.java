@@ -1,7 +1,10 @@
 package com.getbrand.app.utils.promo.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import com.getbrand.app.utils.company.models.Company;
+import com.getbrand.app.utils.file.models.File;
+
+import javax.persistence.*;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -13,13 +16,11 @@ public class Promo {
 
     private String description;
 
-    private int posterId;
-
     private String type;
 
-    private float percent;
+    private double percent;
 
-    private float summ;
+    private double summ;
 
     private String timeSpending;
 
@@ -29,15 +30,23 @@ public class Promo {
 
     private boolean showOnMainScreen;
 
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = File.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "promo_id")
+    @ElementCollection
+    private List<File> files;
+
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(name = "company_id")
+    private Company company;
+
     public Promo() {};
 
     public Promo(String name,
                  String description,
                  String type,
-                 float percent,
-                 float summ,
-                 String timeSpending,
-                 int posterId) {
+                 double percent,
+                 double summ,
+                 String timeSpending) {
         this.id = UUID.randomUUID();
         this.name = name;
         this.description = description;
@@ -45,11 +54,34 @@ public class Promo {
         this.percent = percent;
         this.summ = summ;
         this.timeSpending = timeSpending;
-        this.posterId = posterId;
     }
 
-    public int getPosterId() {
-        return posterId;
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public void addFile(File file) {
+        this.files.add(file);
+    }
+
+    public void removeFile(File file) {
+        this.files.remove(file);
+    }
+
+    public void removeFile(int idx) {
+        this.files.remove(idx);
+    }
+
+    public List<File> getFiles() {
+        return files;
+    }
+
+    public void setFiles(List<File> files) {
+        this.files = files;
     }
 
     public UUID getId() {
@@ -68,11 +100,11 @@ public class Promo {
         return type;
     }
 
-    public float getPercent() {
+    public double getPercent() {
         return percent;
     }
 
-    public float getSumm() {
+    public double getSumm() {
         return summ;
     }
 
@@ -102,5 +134,29 @@ public class Promo {
 
     public void setShowOnMainScreen(boolean showOnMainScreen) {
         this.showOnMainScreen = showOnMainScreen;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setPercent(double percent) {
+        this.percent = percent;
+    }
+
+    public void setSumm(double summ) {
+        this.summ = summ;
+    }
+
+    public void setTimeSpending(String timeSpending) {
+        this.timeSpending = timeSpending;
     }
 }

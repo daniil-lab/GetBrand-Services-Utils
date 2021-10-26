@@ -3,7 +3,7 @@
   "component": {
     "group": "com.getbrand.app",
     "module": "utils",
-    "version": "7.1.0",
+    "version": "24.2.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -25,13 +25,13 @@
       },
       "files": [
         {
-          "name": "utils-7.1.0-plain.jar",
-          "url": "utils-7.1.0-plain.jar",
-          "size": 44709,
-          "sha512": "eaf1c2969dd7030cc222643c89428a65a9a60a4bd5fd7eeaea7b1eab899f71a87a0125fcdcf3d21aeb8e9a71191bba39b44198e0512f1784cf647263bbc38470",
-          "sha256": "f080de21532348c81462dba881f0d25afed212fa4339d58337d88957cbd3b30c",
-          "sha1": "9d27c6ebba00b00793d42d7730981a09f68ea55e",
-          "md5": "2e1163afb4d7e530501586769d6d34f9"
+          "name": "utils-24.2.0-plain.jar",
+          "url": "utils-24.2.0-plain.jar",
+          "size": 462101,
+          "sha512": "d17dc7a263688ca085f6256e0fc188abc080295cdab7033772e072753977cf0f676a246b672a120cef231cd2e35d956cd9fe157921f0d3f361d5190e36dad9e6",
+          "sha256": "20611d2feeb9069d6a5ffaa3f5814e6a736474bdc51a7fbac36af9c428aa39d0",
+          "sha1": "35987744d3f84ded77ed87990c986f930e790c3b",
+          "md5": "c5951536561057e76cfb4b162b2285fc"
         }
       ]
     },
@@ -46,10 +46,10 @@
       },
       "dependencies": [
         {
-          "group": "com.fasterxml.jackson.core",
-          "module": "jackson-databind",
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web",
           "version": {
-            "requires": "2.12.3"
+            "requires": "2.5.1-SNAPSHOT"
           },
           "excludes": [
             {
@@ -107,17 +107,38 @@
               "module": "jersey-core"
             }
           ]
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.12.4"
+          },
+          "excludes": [
+            {
+              "group": "com.sun.jersey.contribs",
+              "module": "jersey-apache-client4"
+            },
+            {
+              "group": "com.sun.jersey",
+              "module": "jersey-client"
+            },
+            {
+              "group": "com.sun.jersey",
+              "module": "jersey-core"
+            }
+          ]
         }
       ],
       "files": [
         {
-          "name": "utils-7.1.0-plain.jar",
-          "url": "utils-7.1.0-plain.jar",
-          "size": 44709,
-          "sha512": "eaf1c2969dd7030cc222643c89428a65a9a60a4bd5fd7eeaea7b1eab899f71a87a0125fcdcf3d21aeb8e9a71191bba39b44198e0512f1784cf647263bbc38470",
-          "sha256": "f080de21532348c81462dba881f0d25afed212fa4339d58337d88957cbd3b30c",
-          "sha1": "9d27c6ebba00b00793d42d7730981a09f68ea55e",
-          "md5": "2e1163afb4d7e530501586769d6d34f9"
+          "name": "utils-24.2.0-plain.jar",
+          "url": "utils-24.2.0-plain.jar",
+          "size": 462101,
+          "sha512": "d17dc7a263688ca085f6256e0fc188abc080295cdab7033772e072753977cf0f676a246b672a120cef231cd2e35d956cd9fe157921f0d3f361d5190e36dad9e6",
+          "sha256": "20611d2feeb9069d6a5ffaa3f5814e6a736474bdc51a7fbac36af9c428aa39d0",
+          "sha1": "35987744d3f84ded77ed87990c986f930e790c3b",
+          "md5": "c5951536561057e76cfb4b162b2285fc"
         }
       ]
     },
@@ -131,13 +152,13 @@
       },
       "files": [
         {
-          "name": "utils-7.1.0-sources.jar",
-          "url": "utils-7.1.0-sources.jar",
-          "size": 26554,
-          "sha512": "ef3a13b9e80af3c0a4ea89094027d594f77a0ed45822f3a2dc61086e022dad402a95ed7cdd7f2b9426246d974be626d9bc55c2fbfd9c879b4cda890d9ed3d14e",
-          "sha256": "f0145e9883aa271df3e8b83a8a69d23a24bfba0c6fa858161be440a68808234d",
-          "sha1": "bf067e96535ae61ddbfc21bed95f48eeaef59566",
-          "md5": "e05d5088626a5fc097cf7363d425766a"
+          "name": "utils-24.2.0-sources.jar",
+          "url": "utils-24.2.0-sources.jar",
+          "size": 132785,
+          "sha512": "5c742111538ee964824f6221f71287279fc35d26bf2f755a553a88e154635c9488482f8c7efe2f8b9de4d4053498258c3e1e8530afeda779721f492450d241c9",
+          "sha256": "0c99d73d271ba699dc905f46854dd00ef1208688bd09de8bd846470cfe9aee9d",
+          "sha1": "f3ac60d611764cce9ee32e7e76f4e04af0053256",
+          "md5": "59a4d7b5f468f16992f100f66d3f1539"
         }
       ]
     }

@@ -1,7 +1,13 @@
 package com.getbrand.app.utils.company.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -11,7 +17,7 @@ public class Company {
 
     private String name;
 
-    private String inn;
+    private int inn;
 
     private String phone;
 
@@ -29,18 +35,42 @@ public class Company {
 
     private String privacy;
 
-    private String pushChannel;
+    private UUID pushChannel;
 
     private String url;
 
     private String description;
 
+    @ElementCollection
+    private List<UUID> users;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JsonManagedReference
+    @JoinColumn(name = "company_id")
+    private List<CompanyAddress> addresses;
+
+    @OneToOne(fetch = FetchType.EAGER, targetEntity = CompanyIntegration.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "company_integration_id")
     private CompanyIntegration companyIntegration;
+
+    @OneToOne(fetch = FetchType.EAGER, targetEntity = CompanyStatus.class, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinColumn(name = "company_status_id")
+    private CompanyStatus status;
+
+    @ManyToMany(cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+    })
+    @JoinTable(name = "company_tariffs",
+            joinColumns = @JoinColumn(name = "company_id"),
+            inverseJoinColumns = @JoinColumn(name = "tarif_id")
+    )
+    private List<CompanyTarif> tarifs;
 
     public Company() {};
 
     public Company(String name,
-                   String inn,
+                   int inn,
                    String phone,
                    String email,
                    String vk,
@@ -50,6 +80,7 @@ public class Company {
                    String privacy,
                    String url,
                    CompanyIntegration companyIntegration) {
+        this.id = UUID.randomUUID();
         this.name = name;
         this.inn = inn;
         this.phone = phone;
@@ -61,8 +92,79 @@ public class Company {
         this.privacy = privacy;
         this.url = url;
         this.companyIntegration = companyIntegration;
+        this.pushChannel = UUID.randomUUID();
+        this.addresses = new ArrayList<>();
+        this.users = new ArrayList<>();
+        this.tarifs = new ArrayList<>();
     };
 
+    public void addTariff(CompanyTarif tariff) {
+        this.tarifs.add(tariff);
+    }
+
+    public void removeTariff(CompanyTarif tariff) {
+        this.tarifs.remove(tariff);
+    }
+
+    public void removeTariff(int tariff) {
+        this.tarifs.remove(tariff);
+    }
+
+    public CompanyIntegration getCompanyIntegration() {
+        return companyIntegration;
+    }
+
+    public List<CompanyTarif> getTarifs() {
+        return tarifs;
+    }
+
+    public void setTarifs(List<CompanyTarif> tarifs) {
+        this.tarifs = tarifs;
+    }
+
+    public List<UUID> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<UUID> users) {
+        this.users = users;
+    }
+
+    public List<CompanyAddress> getAddresses() {
+        return addresses;
+    }
+
+    public void setAddresses(List<CompanyAddress> addresses) {
+        this.addresses = addresses;
+    }
+
+    public void setCompanyIntegration(CompanyIntegration companyIntegration) {
+        this.companyIntegration = companyIntegration;
+    }
+
+    public void addAddressToCompany(CompanyAddress address) {
+        this.addresses.add(address);
+    }
+
+    public void removeAddressFromCompany(CompanyAddress address) {
+        this.addresses.remove(address);
+    }
+
+    public void addUserToCompany(UUID userId) {
+        this.users.add(userId);
+    }
+
+    public void removeUserFromCompany(UUID userId) {
+        this.users.remove(userId);
+    }
+
+    public CompanyStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(CompanyStatus status) {
+        this.status = status;
+    }
 
     public CompanyIntegration getIntegration() {
         return companyIntegration;
@@ -84,11 +186,11 @@ public class Company {
         this.name = name;
     }
 
-    public String getInn() {
+    public int getInn() {
         return inn;
     }
 
-    public void setInn(String inn) {
+    public void setInn(int inn) {
         this.inn = inn;
     }
 
@@ -156,11 +258,11 @@ public class Company {
         this.privacy = privacy;
     }
 
-    public String getPushChannel() {
+    public UUID getPushChannel() {
         return pushChannel;
     }
 
-    public void setPushChannel(String pushChannel) {
+    public void setPushChannel(UUID pushChannel) {
         this.pushChannel = pushChannel;
     }
 

@@ -1,41 +1,25 @@
 package com.getbrand.app.utils.poster.server.poster.response.menu;
 
 public class PosterMenuCategoryResponse {
-    private int type;
+    private int category_id;
 
-    private String photo;
-
-    private int menu_category_id;
-
-    private int product_id;
-
-    private float cost;
-
-    private String product_name;
+    private String category_name;
 
     public PosterMenuCategoryResponse() {};
 
-    public float getCost() {
-        return cost;
+    public int getCategory_id() {
+        return category_id;
     }
 
-    public int getType() {
-        return type;
+    public void setCategory_id(int category_id) {
+        this.category_id = category_id;
     }
 
-    public String getPhoto() {
-        return photo;
+    public String getCategory_name() {
+        return category_name;
     }
 
-    public int getMenu_category_id() {
-        return menu_category_id;
-    }
-
-    public int getProduct_id() {
-        return product_id;
-    }
-
-    public String getProduct_name() {
-        return product_name;
+    public void setCategory_name(String category_name) {
+        this.category_name = category_name;
     }
 }

@@ -1,12 +1,14 @@
 package com.getbrand.app.utils.menu.models;
 
-import com.getbrand.app.utils.models.File;
+import com.getbrand.app.utils.company.models.Company;
+import com.getbrand.app.utils.company.models.CompanyAddress;
+import com.getbrand.app.utils.file.models.File;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 public class MenuProduct {
@@ -15,13 +17,11 @@ public class MenuProduct {
 
     private String name;
 
-    private int posterId;
-
     private String type;
 
     private String description;
 
-    private float price;
+    private double price;
 
     private boolean isShowForClient = true;
 
@@ -31,9 +31,12 @@ public class MenuProduct {
 
     private UUID categoryId;
 
-    @OneToMany
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(name = "company_id")
+    private Company company;
+
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "menu_product_id")
-    @ElementCollection
     private List<MenuProductModificator> modificators;
 
     @PreUpdate
@@ -41,26 +44,27 @@ public class MenuProduct {
         this.updatedAt = Instant.now().toString();
     }
 
-    @OneToMany
-    @JoinColumn(name="menu_file_id")
-    private List<File> files;
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = File.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "product_id")
+    private Set<File> files;
 
     public MenuProduct() {};
 
-    public MenuProduct(UUID categoryId, String name, String type, String description, float price, boolean isShowForClient, List<File> files, int posterId) {
+    public MenuProduct(String name, String type, String description, double price, boolean isShowForClient, UUID categoryId, Company company) {
         this.name = name;
         this.type = type;
         this.description = description;
-        this.price = price;
+        this.price = price * 100;
         this.isShowForClient = isShowForClient;
-        this.posterId = posterId;
-        this.files = files;
         this.categoryId = categoryId;
+        this.company = company;
+        this.id = UUID.randomUUID();
         this.modificators = new ArrayList<>();
+        this.files = new HashSet<>();
     }
 
-    public int getPosterId() {
-        return posterId;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public UUID getCategoryId() {
@@ -107,7 +111,7 @@ public class MenuProduct {
         return description;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -115,7 +119,7 @@ public class MenuProduct {
         return isShowForClient;
     }
 
-    public List<File> getFiles() {
+    public Set<File> getFiles() {
         return files;
     }
 
@@ -127,5 +131,49 @@ public class MenuProduct {
 
     public void removeFile(int idx) {
         this.files.remove(idx);
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setShowForClient(boolean showForClient) {
+        isShowForClient = showForClient;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setUpdatedAt(String updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public void setCategoryId(UUID categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public void setModificators(List<MenuProductModificator> modificators) {
+        this.modificators = modificators;
+    }
+
+    public void setFiles(Set<File> files) {
+        this.files = files;
     }
 }

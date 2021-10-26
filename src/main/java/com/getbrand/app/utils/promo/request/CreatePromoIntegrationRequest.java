@@ -3,15 +3,19 @@ package com.getbrand.app.utils.promo.request;
 import java.util.UUID;
 
 public class CreatePromoIntegrationRequest {
-    private UUID integrationId;
+    private UUID companyId;
 
     public CreatePromoIntegrationRequest() {};
 
-    public CreatePromoIntegrationRequest(UUID integrationId) {
-        this.integrationId = integrationId;
+    public CreatePromoIntegrationRequest(UUID companyId) {
+        this.companyId = companyId;
     }
 
-    public UUID getIntegrationId() {
-        return integrationId;
+    public UUID getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(UUID companyId) {
+        this.companyId = companyId;
     }
 }

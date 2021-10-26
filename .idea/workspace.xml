@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8387cf7e-84a7-4733-8358-28e937e4c8d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/Integration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/IntegrationApiAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/IntegrationFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/ServiceRestActionAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/SmsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/CompanyServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/RoleServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/StatusServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyPaymentBonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyPromocode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyTarif.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyTarifPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/PosterCompanyAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/CreateCompanyPaymentBonusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/CreateCompanyPromocodeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/CreateCompanyTarifRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/CreateCompanyWithStuffRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/CreateStatusActionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/CreateStatusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/UpdateCompanyBalanceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/UpdateCompanyConfigRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/UploadCompanyFileRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/file/FileServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/file/request/CreateFileRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/file/request/UpdateFileRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/MenuServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/PosterMenuServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/MenuCategoryComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/category/GetBrandMenuCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/category/PosterMenuCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/gift/Gift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/gift/GiftComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/gift/GiftModificator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/modificators/PosterMenuProductModificator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/product/GetBrandMenuProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/product/PosterMenuProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/AddComponentToGiftRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/AddModificatorToGiftRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/AddModificatorToProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/CreateGiftRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/RemoveModificatorFromProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/data/company/CompanyMessagingData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/data/loyalty/LoyaltyMessagingData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/data/menu/MenuMessagingData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/data/status/StatusMessagingData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/data/user/UserMessagingData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/entity/ServiceEntityMessageAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/handle/BasicRepositoryMessageChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/handle/ServiceEntityMessageBasicHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/handle/ServiceEntityMessageCreateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/handle/ServiceEntityMessageDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/handle/ServiceEntityMessageUpdateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/messaging/handle/ServiceEntityMessageWithCheckHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/models/StatusAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/EquipmentServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/models/OrderPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/models/OrderReview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/models/poster/PosterEquipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/models/poster/PosterOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/AddBonusToOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/AddEquipmentToOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/AddGiftToOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/AddLoyaltyTypeToOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/AddPriceToOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/AddProductToOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/AddPromoToOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/RemoveBonusFromOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/RemoveLoyaltyTypeFromOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/RemoveProductFromOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/UpdateCreatedOrderStateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/UpdateOrderEmployeeCommentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/UpdateOrderManagerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/order/request/UpdateOrderReviewRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/PosterApiAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/models/PosterIntegrationApiData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/CreatePosterMenuProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/CreatePosterUserGroupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/CreatePosterUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/RemovePosterMenuCategoryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/RemovePosterMenuProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/RemovePosterUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/UpdatePosterUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/menu/CreatePosterMenuCategoryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/menu/CreatePosterMenuProductPosterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/menu/RemovePosterMenuCategoryPosterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/menu/RemovePosterMenuProductPosterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/user/CreatePosterUserGroupPosterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/user/CreatePosterUserPosterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/user/RemovePosterUserPosterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/user/UpdatePosterUserPosterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/request/workshop/CreatePosterWorkshopPosterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuProductModificatorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/order/PosterOrderEquipmentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/order/PosterOrderEquipmentWrapperResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/spot/GetPosterSpotsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/user/PosterUserGroupResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/user/PosterUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/workshop/PosterWorkshop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/PromoServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/models/getbrand/GetBrandPromo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/models/poster/PosterPromo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/role/models/CompanyRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/role/models/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/role/models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/role/request/CreateCompanyRoleRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/role/request/CreatePermissionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/role/request/CreateRoleRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/saga/SagaAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/saga/SagaOrchestrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/transactions/models/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/UserServiceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/models/SmsAuthDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/models/UserDeviceToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/models/UserIntegration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/models/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/models/WaitAuthUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/models/getbrand/GetBrandUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/models/poster/PosterUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/AddCompanyRoleToUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/AddCompanyToUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/AuthUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/CreateUserDeviceTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/CreateUserIntegrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/CreateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/CreateUserSmsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/CreateUserStatusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/GetCodeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/UpdateStatusForUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/UpdateUserPasswordRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/UpdateUserPasswordSmsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/UpdateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/request/UpdateUserStatusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/user/response/AuthUserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha256-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha256-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha512-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha512-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/IntegrationComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/IntegrationType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/IntegrationType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/ServiceAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/ServiceAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/ServiceRestResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/ServiceRestResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/company/models/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/company/models/Company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/company/models/CompanyIntegration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/company/models/CompanyIntegration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/company/request/CreateCompanyRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/company/request/CreateCompanyRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/company/request/UpdateCompanyRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/company/request/UpdateCompanyRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/models/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/models/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/models/MenuCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/models/MenuCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/models/MenuProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/models/MenuProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/models/MenuProductModificator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/models/MenuProductModificator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/request/AddCategoryMenuRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/request/AddCategoryMenuRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/request/AddFileRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/request/AddProductToCategoryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/request/AddProductToCategoryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/request/CreateMenuRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/menu/request/CreateMenuRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/models/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/models/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/models/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/PosterServiceAdapter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/PosterServiceAdapter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/PosterServiceAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/PosterServiceAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/models/PosterIntegration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/models/PosterIntegration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/request/AddComponentToIntegrationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/request/CreateIntegrationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/request/UpdateIntegrationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuCategoryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuCategoryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/server/poster/response/promo/PosterPromoParamsResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/poster/server/poster/response/promo/PosterPromoParamsResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/models/Promo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/models/Promo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/models/PromoIntegration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/models/PromoIntegration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/request/AddPromoToIntegrationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/request/CreatePromoIntegrationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/request/CreatePromoIntegrationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/request/CreatePromoRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/request/CreatePromoRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/request/UpdatePromoRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/getbrand/app/utils/promo/request/UpdatePromoRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/publications/gpr/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/publications/gpr/module.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/publications/gpr/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/publications/gpr/pom-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishGprPublicationToGitHubPackagesRepository/module-maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishGprPublicationToGitHubPackagesRepository/module-maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/IntegrationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/IntegrationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/ServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/ServiceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/ServiceRestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/ServiceRestResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/models/CompanyIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/CreateCompanyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/CreateCompanyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/UpdateCompanyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/company/request/UpdateCompanyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/MenuCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/MenuCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/MenuProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/MenuProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/MenuProductModificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/models/MenuProductModificator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/AddCategoryMenuRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/AddCategoryMenuRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/AddFileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/AddProductToCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/AddProductToCategoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/CreateMenuRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/menu/request/CreateMenuRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/models/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/file/models/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/models/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/models/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/PosterServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/PosterServiceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/models/PosterIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/models/PosterIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/CreateIntegrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/CreatePosterIntegrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/UpdateIntegrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/request/UpdatePosterIntegrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuCategoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/menu/PosterMenuCategoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/promo/PosterPromoParamsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/poster/server/poster/response/promo/PosterPromoParamsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/models/Promo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/models/Promo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/models/PromoIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/models/PromoIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/request/AddPromoToIntegrationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/request/CreatePromoIntegrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/request/CreatePromoIntegrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/request/CreatePromoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/request/CreatePromoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/request/UpdatePromoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/getbrand/app/utils/promo/request/UpdatePromoRequest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="utils" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zE6BHmzdr7HfYHvMdz8Ketrgon" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="utils [publishAllPublicationsToGitHubPackagesRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishAllPublicationsToGitHubPackagesRepository" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.utils [publishAllPublicationsToGitHubPackagesRepository]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8387cf7e-84a7-4733-8358-28e937e4c8d5" name="Default Changelist" comment="" />
+      <created>1633700765291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633700765291</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

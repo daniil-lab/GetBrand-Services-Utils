@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.getbrand.app'
-version '8.0.0'
+version '24.2.0'
 
 repositories {
     mavenCentral()
@@ -17,10 +17,10 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
 
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.3'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '3.0.3'
-
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.4'
 
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
@@ -44,10 +44,10 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/daniil-lab/get-brand-app-utils")
+            url = uri("https://maven.pkg.github.com/daniil-lab/GetBrand-Services-Utils")
             credentials {
                 username = "daniil-lab"
-                password = "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"
+                password = "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"
             }
         }
     }

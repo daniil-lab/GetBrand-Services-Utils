@@ -4,25 +4,24 @@ import com.getbrand.app.utils.IntegrationType;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 @Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Menu {
     @Id
     private UUID id;
 
-    private UUID integrationId;
-
-    private IntegrationType integrationType;
+    private UUID companyId;
 
     private String createdAt;
 
     private String updatedAt;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "menu_category_id")
-    @ElementCollection()
     private List<MenuCategory> categories;
 
     @PreUpdate
@@ -32,29 +31,41 @@ public class Menu {
 
     public Menu() {};
 
-    public Menu(UUID integrationId, IntegrationType integrationType, List<MenuCategory> categories) {
+    public Menu(UUID companyId, List<MenuCategory> categories) {
         this.id = UUID.randomUUID();
-        this.integrationId = integrationId;
-        this.integrationType = integrationType;
+        this.companyId = companyId;
         this.categories = categories;
         this.updatedAt = Instant.now().toString();
         this.createdAt = Instant.now().toString();
+        this.categories = new ArrayList<>();
     }
 
-    public Menu(UUID integrationId, IntegrationType integrationType) {
+    public Menu(UUID companyId) {
         this.id = UUID.randomUUID();
-        this.integrationId = integrationId;
-        this.integrationType = integrationType;
+        this.companyId = companyId;
         this.updatedAt = Instant.now().toString();
         this.createdAt = Instant.now().toString();
+        this.categories = new ArrayList<>();
     }
 
-    public UUID getIntegrationId() {
-        return integrationId;
+    public void setCompanyId(UUID companyId) {
+        this.companyId = companyId;
     }
 
-    public IntegrationType getIntegrationType() {
-        return integrationType;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setUpdatedAt(String updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public void setCategories(List<MenuCategory> categories) {
+        this.categories = categories;
+    }
+
+    public UUID getCompanyId() {
+        return companyId;
     }
 
     public List<MenuCategory> getCategories() {

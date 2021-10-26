@@ -10,7 +10,7 @@ public class PromoIntegration {
     @Id
     private UUID id;
 
-    private UUID integrationId;
+    private UUID companyId;
 
     @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "promo_integration")
@@ -19,9 +19,9 @@ public class PromoIntegration {
 
     public PromoIntegration() {};
 
-    public PromoIntegration(UUID integrationId) {
+    public PromoIntegration(UUID companyId) {
         this.id = UUID.randomUUID();
-        this.integrationId = integrationId;
+        this.companyId = companyId;
         this.promos = new ArrayList<>();
     }
 
@@ -29,8 +29,8 @@ public class PromoIntegration {
         return id;
     }
 
-    public UUID getIntegrationId() {
-        return integrationId;
+    public UUID getCompanyId() {
+        return companyId;
     }
 
     public List<Promo> getPromos() {
@@ -47,7 +47,7 @@ public class PromoIntegration {
 
     public void cleanPromos() { this.promos = new ArrayList<>(); };
 
-    public void setIntegrationId(UUID integrationId) {
-        this.integrationId = integrationId;
+    public void setCompanyId(UUID companyId) {
+        this.companyId = companyId;
     }
 }

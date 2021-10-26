@@ -7,23 +7,59 @@ public class CreatePromoRequest {
 
     private String description;
 
+    private String type;
+
+    private double percent = -1;
+
+    private double summ = -1;
+
     private String timeSpending;
 
-    private UUID integrationId;
+    private UUID companyId;
 
-    private float summ;
+    private boolean isAllow;
 
-    private float percent;
+    private boolean isBanner;
+
+    private boolean showOnMainScreen;
+
+    private int posterId = -1;
 
     public CreatePromoRequest() {};
 
-    public CreatePromoRequest(String name, String description, String timeSpending, UUID integrationId, float summ, float percent) {
+    public CreatePromoRequest(String name, String description, String type, double percent, double summ, String timeSpending, UUID companyId, boolean isAllow, boolean isBanner, boolean showOnMainScreen) {
         this.name = name;
         this.description = description;
-        this.timeSpending = timeSpending;
-        this.integrationId = integrationId;
-        this.summ = summ;
+        this.type = type;
         this.percent = percent;
+        this.summ = summ;
+        this.timeSpending = timeSpending;
+        this.companyId = companyId;
+        this.isAllow = isAllow;
+        this.isBanner = isBanner;
+        this.showOnMainScreen = showOnMainScreen;
+    }
+
+    public CreatePromoRequest(String name, String description, String type, double percent, double summ, String timeSpending, UUID companyId, boolean isAllow, boolean isBanner, boolean showOnMainScreen, int posterId) {
+        this.name = name;
+        this.description = description;
+        this.type = type;
+        this.percent = percent;
+        this.summ = summ;
+        this.timeSpending = timeSpending;
+        this.companyId = companyId;
+        this.isAllow = isAllow;
+        this.isBanner = isBanner;
+        this.showOnMainScreen = showOnMainScreen;
+        this.posterId = posterId;
+    }
+
+    public int getPosterId() {
+        return posterId;
+    }
+
+    public void setPosterId(int posterId) {
+        this.posterId = posterId;
     }
 
     public String getName() {
@@ -42,6 +78,30 @@ public class CreatePromoRequest {
         this.description = description;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public double getPercent() {
+        return percent;
+    }
+
+    public void setPercent(double percent) {
+        this.percent = percent;
+    }
+
+    public double getSumm() {
+        return summ;
+    }
+
+    public void setSumm(double summ) {
+        this.summ = summ;
+    }
+
     public String getTimeSpending() {
         return timeSpending;
     }
@@ -50,27 +110,35 @@ public class CreatePromoRequest {
         this.timeSpending = timeSpending;
     }
 
-    public UUID getIntegrationId() {
-        return integrationId;
+    public UUID getCompanyId() {
+        return companyId;
     }
 
-    public void setIntegrationId(UUID integrationId) {
-        this.integrationId = integrationId;
+    public void setCompanyId(UUID companyId) {
+        this.companyId = companyId;
     }
 
-    public float getSumm() {
-        return summ;
+    public boolean isAllow() {
+        return isAllow;
     }
 
-    public void setSumm(float summ) {
-        this.summ = summ;
+    public void setAllow(boolean allow) {
+        isAllow = allow;
     }
 
-    public float getPercent() {
-        return percent;
+    public boolean isBanner() {
+        return isBanner;
     }
 
-    public void setPercent(float percent) {
-        this.percent = percent;
+    public void setBanner(boolean banner) {
+        isBanner = banner;
+    }
+
+    public boolean isShowOnMainScreen() {
+        return showOnMainScreen;
+    }
+
+    public void setShowOnMainScreen(boolean showOnMainScreen) {
+        this.showOnMainScreen = showOnMainScreen;
     }
 }
