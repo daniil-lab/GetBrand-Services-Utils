@@ -422,8 +422,66 @@ com/getbrand/app/utils/messaging/entity/ServiceCheckMessage.java
  com.getbrand.app.utils.messaging.entity.ServiceCheckMessage
 com/getbrand/app/utils/poster/request/UpdatePosterIntegrationRequest.java
  com.getbrand.app.utils.poster.request.UpdatePosterIntegrationRequest
-com/getbrand/app/utils/order/request/AddEquipmentToOrderRequest.java
- com.getbrand.app.utils.order.request.AddEquipmentToOrderRequest
+com/getbrand/app/utils/order/OrderServiceAdapter.java
+ com.getbrand.app.utils.order.OrderServiceAdapter
+ com.getbrand.app.utils.order.OrderServiceAdapter$1
+ com.getbrand.app.utils.order.OrderServiceAdapter$10
+ com.getbrand.app.utils.order.OrderServiceAdapter$11
+ com.getbrand.app.utils.order.OrderServiceAdapter$12
+ com.getbrand.app.utils.order.OrderServiceAdapter$13
+ com.getbrand.app.utils.order.OrderServiceAdapter$14
+ com.getbrand.app.utils.order.OrderServiceAdapter$15
+ com.getbrand.app.utils.order.OrderServiceAdapter$16
+ com.getbrand.app.utils.order.OrderServiceAdapter$17
+ com.getbrand.app.utils.order.OrderServiceAdapter$18
+ com.getbrand.app.utils.order.OrderServiceAdapter$19
+ com.getbrand.app.utils.order.OrderServiceAdapter$2
+ com.getbrand.app.utils.order.OrderServiceAdapter$20
+ com.getbrand.app.utils.order.OrderServiceAdapter$21
+ com.getbrand.app.utils.order.OrderServiceAdapter$22
+ com.getbrand.app.utils.order.OrderServiceAdapter$23
+ com.getbrand.app.utils.order.OrderServiceAdapter$24
+ com.getbrand.app.utils.order.OrderServiceAdapter$25
+ com.getbrand.app.utils.order.OrderServiceAdapter$26
+ com.getbrand.app.utils.order.OrderServiceAdapter$27
+ com.getbrand.app.utils.order.OrderServiceAdapter$28
+ com.getbrand.app.utils.order.OrderServiceAdapter$29
+ com.getbrand.app.utils.order.OrderServiceAdapter$3
+ com.getbrand.app.utils.order.OrderServiceAdapter$30
+ com.getbrand.app.utils.order.OrderServiceAdapter$31
+ com.getbrand.app.utils.order.OrderServiceAdapter$32
+ com.getbrand.app.utils.order.OrderServiceAdapter$33
+ com.getbrand.app.utils.order.OrderServiceAdapter$34
+ com.getbrand.app.utils.order.OrderServiceAdapter$35
+ com.getbrand.app.utils.order.OrderServiceAdapter$36
+ com.getbrand.app.utils.order.OrderServiceAdapter$37
+ com.getbrand.app.utils.order.OrderServiceAdapter$38
+ com.getbrand.app.utils.order.OrderServiceAdapter$39
+ com.getbrand.app.utils.order.OrderServiceAdapter$4
+ com.getbrand.app.utils.order.OrderServiceAdapter$40
+ com.getbrand.app.utils.order.OrderServiceAdapter$41
+ com.getbrand.app.utils.order.OrderServiceAdapter$42
+ com.getbrand.app.utils.order.OrderServiceAdapter$43
+ com.getbrand.app.utils.order.OrderServiceAdapter$44
+ com.getbrand.app.utils.order.OrderServiceAdapter$45
+ com.getbrand.app.utils.order.OrderServiceAdapter$46
+ com.getbrand.app.utils.order.OrderServiceAdapter$47
+ com.getbrand.app.utils.order.OrderServiceAdapter$48
+ com.getbrand.app.utils.order.OrderServiceAdapter$49
+ com.getbrand.app.utils.order.OrderServiceAdapter$5
+ com.getbrand.app.utils.order.OrderServiceAdapter$50
+ com.getbrand.app.utils.order.OrderServiceAdapter$51
+ com.getbrand.app.utils.order.OrderServiceAdapter$52
+ com.getbrand.app.utils.order.OrderServiceAdapter$53
+ com.getbrand.app.utils.order.OrderServiceAdapter$54
+ com.getbrand.app.utils.order.OrderServiceAdapter$55
+ com.getbrand.app.utils.order.OrderServiceAdapter$56
+ com.getbrand.app.utils.order.OrderServiceAdapter$57
+ com.getbrand.app.utils.order.OrderServiceAdapter$58
+ com.getbrand.app.utils.order.OrderServiceAdapter$6
+ com.getbrand.app.utils.order.OrderServiceAdapter$7
+ com.getbrand.app.utils.order.OrderServiceAdapter$8
+ com.getbrand.app.utils.order.OrderServiceAdapter$9
 com/getbrand/app/utils/company/models/CompanyIntegration.java
  com.getbrand.app.utils.company.models.CompanyIntegration
 com/getbrand/app/utils/loyalty/LoyaltyServiceAdapter.java
@@ -590,66 +648,8 @@ com/getbrand/app/utils/role/models/Role.java
  com.getbrand.app.utils.role.models.Role
 com/getbrand/app/utils/poster/server/poster/response/workshop/PosterWorkshop.java
  com.getbrand.app.utils.poster.server.poster.response.workshop.PosterWorkshop
-com/getbrand/app/utils/order/OrderServiceAdapter.java
- com.getbrand.app.utils.order.OrderServiceAdapter
- com.getbrand.app.utils.order.OrderServiceAdapter$1
- com.getbrand.app.utils.order.OrderServiceAdapter$10
- com.getbrand.app.utils.order.OrderServiceAdapter$11
- com.getbrand.app.utils.order.OrderServiceAdapter$12
- com.getbrand.app.utils.order.OrderServiceAdapter$13
- com.getbrand.app.utils.order.OrderServiceAdapter$14
- com.getbrand.app.utils.order.OrderServiceAdapter$15
- com.getbrand.app.utils.order.OrderServiceAdapter$16
- com.getbrand.app.utils.order.OrderServiceAdapter$17
- com.getbrand.app.utils.order.OrderServiceAdapter$18
- com.getbrand.app.utils.order.OrderServiceAdapter$19
- com.getbrand.app.utils.order.OrderServiceAdapter$2
- com.getbrand.app.utils.order.OrderServiceAdapter$20
- com.getbrand.app.utils.order.OrderServiceAdapter$21
- com.getbrand.app.utils.order.OrderServiceAdapter$22
- com.getbrand.app.utils.order.OrderServiceAdapter$23
- com.getbrand.app.utils.order.OrderServiceAdapter$24
- com.getbrand.app.utils.order.OrderServiceAdapter$25
- com.getbrand.app.utils.order.OrderServiceAdapter$26
- com.getbrand.app.utils.order.OrderServiceAdapter$27
- com.getbrand.app.utils.order.OrderServiceAdapter$28
- com.getbrand.app.utils.order.OrderServiceAdapter$29
- com.getbrand.app.utils.order.OrderServiceAdapter$3
- com.getbrand.app.utils.order.OrderServiceAdapter$30
- com.getbrand.app.utils.order.OrderServiceAdapter$31
- com.getbrand.app.utils.order.OrderServiceAdapter$32
- com.getbrand.app.utils.order.OrderServiceAdapter$33
- com.getbrand.app.utils.order.OrderServiceAdapter$34
- com.getbrand.app.utils.order.OrderServiceAdapter$35
- com.getbrand.app.utils.order.OrderServiceAdapter$36
- com.getbrand.app.utils.order.OrderServiceAdapter$37
- com.getbrand.app.utils.order.OrderServiceAdapter$38
- com.getbrand.app.utils.order.OrderServiceAdapter$39
- com.getbrand.app.utils.order.OrderServiceAdapter$4
- com.getbrand.app.utils.order.OrderServiceAdapter$40
- com.getbrand.app.utils.order.OrderServiceAdapter$41
- com.getbrand.app.utils.order.OrderServiceAdapter$42
- com.getbrand.app.utils.order.OrderServiceAdapter$43
- com.getbrand.app.utils.order.OrderServiceAdapter$44
- com.getbrand.app.utils.order.OrderServiceAdapter$45
- com.getbrand.app.utils.order.OrderServiceAdapter$46
- com.getbrand.app.utils.order.OrderServiceAdapter$47
- com.getbrand.app.utils.order.OrderServiceAdapter$48
- com.getbrand.app.utils.order.OrderServiceAdapter$49
- com.getbrand.app.utils.order.OrderServiceAdapter$5
- com.getbrand.app.utils.order.OrderServiceAdapter$50
- com.getbrand.app.utils.order.OrderServiceAdapter$51
- com.getbrand.app.utils.order.OrderServiceAdapter$52
- com.getbrand.app.utils.order.OrderServiceAdapter$53
- com.getbrand.app.utils.order.OrderServiceAdapter$54
- com.getbrand.app.utils.order.OrderServiceAdapter$55
- com.getbrand.app.utils.order.OrderServiceAdapter$56
- com.getbrand.app.utils.order.OrderServiceAdapter$57
- com.getbrand.app.utils.order.OrderServiceAdapter$58
- com.getbrand.app.utils.order.OrderServiceAdapter$6
- com.getbrand.app.utils.order.OrderServiceAdapter$7
- com.getbrand.app.utils.order.OrderServiceAdapter$8
- com.getbrand.app.utils.order.OrderServiceAdapter$9
+com/getbrand/app/utils/messaging/data/menu/MenuMessagingData.java
+ com.getbrand.app.utils.messaging.data.menu.MenuMessagingData
 com/getbrand/app/utils/transactions/models/Transaction.java
  com.getbrand.app.utils.transactions.models.Transaction
 com/getbrand/app/utils/user/models/UserIntegration.java
@@ -744,5 +744,7 @@ com/getbrand/app/utils/messaging/data/company/CompanyMessagingData.java
  com.getbrand.app.utils.messaging.data.company.CompanyMessagingData
 com/getbrand/app/utils/messaging/data/loyalty/LoyaltyMessagingData.java
  com.getbrand.app.utils.messaging.data.loyalty.LoyaltyMessagingData
-com/getbrand/app/utils/messaging/data/menu/MenuMessagingData.java
- com.getbrand.app.utils.messaging.data.menu.MenuMessagingData
+com/getbrand/app/utils/order/request/AddEquipmentToOrderRequest.java
+ com.getbrand.app.utils.order.request.AddEquipmentToOrderRequest
+com/getbrand/app/utils/messaging/data/order/OrderMessagingData.java
+ com.getbrand.app.utils.messaging.data.order.OrderMessagingData

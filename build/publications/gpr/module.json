@@ -3,7 +3,7 @@
   "component": {
     "group": "com.getbrand.app",
     "module": "utils",
-    "version": "24.2.0",
+    "version": "24.5.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -25,13 +25,13 @@
       },
       "files": [
         {
-          "name": "utils-24.2.0-plain.jar",
-          "url": "utils-24.2.0-plain.jar",
-          "size": 462101,
-          "sha512": "d17dc7a263688ca085f6256e0fc188abc080295cdab7033772e072753977cf0f676a246b672a120cef231cd2e35d956cd9fe157921f0d3f361d5190e36dad9e6",
-          "sha256": "20611d2feeb9069d6a5ffaa3f5814e6a736474bdc51a7fbac36af9c428aa39d0",
-          "sha1": "35987744d3f84ded77ed87990c986f930e790c3b",
-          "md5": "c5951536561057e76cfb4b162b2285fc"
+          "name": "utils-24.5.0-plain.jar",
+          "url": "utils-24.5.0-plain.jar",
+          "size": 463862,
+          "sha512": "7778315d0bab3ea659a1c4773ad822cee3904af152734fa061d5f86b8539b35811c9027b3512c76385da896394a26d280d18374d745cbe6ca1c8d86a0959118f",
+          "sha256": "da8757c9fc964a719fc32426e09fa8b789815ff6adc3662ab28b9437dc527ea2",
+          "sha1": "3ac6b6c3c5308a95c7d6257d388563a81e5b44e5",
+          "md5": "915ba47f05637479890500dd34063933"
         }
       ]
     },
@@ -132,13 +132,13 @@
       ],
       "files": [
         {
-          "name": "utils-24.2.0-plain.jar",
-          "url": "utils-24.2.0-plain.jar",
-          "size": 462101,
-          "sha512": "d17dc7a263688ca085f6256e0fc188abc080295cdab7033772e072753977cf0f676a246b672a120cef231cd2e35d956cd9fe157921f0d3f361d5190e36dad9e6",
-          "sha256": "20611d2feeb9069d6a5ffaa3f5814e6a736474bdc51a7fbac36af9c428aa39d0",
-          "sha1": "35987744d3f84ded77ed87990c986f930e790c3b",
-          "md5": "c5951536561057e76cfb4b162b2285fc"
+          "name": "utils-24.5.0-plain.jar",
+          "url": "utils-24.5.0-plain.jar",
+          "size": 463862,
+          "sha512": "7778315d0bab3ea659a1c4773ad822cee3904af152734fa061d5f86b8539b35811c9027b3512c76385da896394a26d280d18374d745cbe6ca1c8d86a0959118f",
+          "sha256": "da8757c9fc964a719fc32426e09fa8b789815ff6adc3662ab28b9437dc527ea2",
+          "sha1": "3ac6b6c3c5308a95c7d6257d388563a81e5b44e5",
+          "md5": "915ba47f05637479890500dd34063933"
         }
       ]
     },
@@ -152,13 +152,13 @@
       },
       "files": [
         {
-          "name": "utils-24.2.0-sources.jar",
-          "url": "utils-24.2.0-sources.jar",
-          "size": 132785,
-          "sha512": "5c742111538ee964824f6221f71287279fc35d26bf2f755a553a88e154635c9488482f8c7efe2f8b9de4d4053498258c3e1e8530afeda779721f492450d241c9",
-          "sha256": "0c99d73d271ba699dc905f46854dd00ef1208688bd09de8bd846470cfe9aee9d",
-          "sha1": "f3ac60d611764cce9ee32e7e76f4e04af0053256",
-          "md5": "59a4d7b5f468f16992f100f66d3f1539"
+          "name": "utils-24.5.0-sources.jar",
+          "url": "utils-24.5.0-sources.jar",
+          "size": 133581,
+          "sha512": "7d3eb4210b724664e6c229459fc3b0cd6746dce7a6f74ee56a92c82d689024f2ac9895175c3d635b57b73a268ce855c16cc7a313992ecbdab1468ef776890b61",
+          "sha256": "68f1a4b2c0a54751578a055060b1827561def0b42fa40ffab8dfb1641dbfec40",
+          "sha1": "b61aefb1578c3ee9b74f3115605691b0734f8412",
+          "md5": "2f06d6380846ba4175987a9176ca2026"
         }
       ]
     }

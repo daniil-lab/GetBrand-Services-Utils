@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.getbrand.app'
-version '24.2.0'
+version '24.5.0'
 
 repositories {
     mavenCentral()
@@ -47,7 +47,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/daniil-lab/GetBrand-Services-Utils")
             credentials {
                 username = "daniil-lab"
-                password = "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"
+                password = "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"
             }
         }
     }
